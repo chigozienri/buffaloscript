@@ -99,8 +99,8 @@ class Instructions():
 
 if __name__ == "__main__":
     if len(sys.argv) == 2:
-        if sys.argv[1][-4:] != '.buf':
-            filepath = str(sys.argv[1]) + '.buf'
+        if sys.argv[1][-4:] != '.prg':
+            filepath = str(sys.argv[1]) + '.prg'
         else:
             filepath = str(sys.argv[1])
 
@@ -110,7 +110,7 @@ if __name__ == "__main__":
     elif len(sys.argv) == 1:
         string = sys.stdin.read()
     else:
-        print(f'usage: {sys.argv[0]} <src>\nor cat <src.buf> | {sys.argv[0]}')
+        print(f'usage: {sys.argv[0]} <src>\nor cat <src.prg> | {sys.argv[0]}')
         sys.exit(1)
     
     instructions = Instructions(string)
