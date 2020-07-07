@@ -1,4 +1,6 @@
 # buffaloscript
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/chigozienri/buffaloscript/master)
+
 A programming language that uses only the tokens "Buffalo", "buffalo", " " and ".". Each program must also be grammatically correct in English. Based on Minsky's Program Machine (1967)
 
 Currently written as a Domain Specific Language in Python
