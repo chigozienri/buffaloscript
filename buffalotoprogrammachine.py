@@ -1,9 +1,8 @@
-#!/usr/bin/env python3
-
 import sys
 
 from buffaloparse import parse, parses
 from programmachine import Register, Instructions
+import re
 
 def buf_to_binary(string):
     if string == "Buffalo":
@@ -24,6 +23,10 @@ def buf_list_to_binary(buf_list):
     return reverse_binary_to_decimal(decimal_list)
 
 def interpret(program):
+    # remove comments
+    program = re.split(r'(🐃[\S\s]*?🐃)', program)
+    program = ''.join(map(lambda x: '' if '🐃' in x else x, program))
+    # Separate sentencesedm 
     program = program.split('.')
     program = list(filter(lambda x: x not in ['','\n'], program))
     # check that each sentence parses. If not, just add more trailing buffalos
