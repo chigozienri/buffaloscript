@@ -36,7 +36,9 @@ If the third word is "buffalo", we check the fifth word. If the fifth word is "B
 
 The interpreter will throw an error if any of the sentences in the input program fail to parse according to the grammar defined in buffaloparse.py . Note that this does not currently include "Buffalo buffalo" as a valid verb meaning "to buffalo in a manner specific to the city of Buffalo".
 
-TODO: Add functionality for  🐃 to escape comments. The style guide will strongly encourage comments to be used only for incidental asides, and not for useful comments on the function of the program.
+The unicode character '🐃' can be used to escape comments (any text surrounded by two 🐃 will be ignored by the interpeter). Good buffaloscript
+programming style dictates that comments should be used only for incidental asides,
+and not for useful comments on the function of the program.
 
 
 N.B. A much more polished version of this idea already exists at http://bfalo.com/. I am using a very different architecture based on register machines, and also attempt to ensure that each program parses as valid English.
