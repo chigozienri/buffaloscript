@@ -22,11 +22,13 @@ def parse(string):
     grammar = CFG.fromstring(grammar_string)
 
     parser = nltk.ChartParser(grammar)
-    
-    return list(parser.parse(string.split()))
+
+    parsed = parser.parse(string.split())
+
+    return parsed
 
 def parses(string):
-    if len(parse(string)) > 0:
+    if len(list(parse(string))) > 0:
         return True
     return False
 
