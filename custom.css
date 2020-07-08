@@ -1,0 +1,27 @@
+body::after{
+  content: "";
+  background: url(https://upload.wikimedia.org/wikipedia/commons/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg);
+  background-size:cover;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.cell{
+  background-color: white;
+  border: 1px;
+}
+
+.code_cell{
+  background-color: white;
+  border: 1px;
+}
+
+.output{
+  background-color: white;
+  border: 1px;
+}
